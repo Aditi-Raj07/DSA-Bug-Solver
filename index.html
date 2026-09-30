@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSA Instructor AI</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <i class="fa-solid fa-robot"></i>
+        <span>DSA Mentor AI</span>
+      </div>
+
+      <ul class="menu">
+        <li class="active">
+          <i class="fa-solid fa-house"></i>
+          Dashboard
+        </li>
+
+        <li>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          History
+        </li>
+
+        <li>
+          <i class="fa-solid fa-book"></i>
+          Topics
+        </li>
+
+        <li>
+          <i class="fa-solid fa-code"></i>
+          Playground
+        </li>
+
+        <li>
+          <i class="fa-solid fa-gear"></i>
+          Settings
+        </li>
+      </ul>
+
+      <div class="footer">
+        Powered by Gemini
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+      <!-- Top -->
+      <div class="topbar">
+
+        <h1>
+          DSA Instructor
+          <span>AI</span>
+        </h1>
+
+        <button id="themeBtn">
+          🌙 Dark Mode
+        </button>
+
+      </div>
+
+      <!-- Cards -->
+      <div class="cards">
+
+        <div class="card">
+          <h2 id="questionCount">0</h2>
+          <p>Questions Asked</p>
+        </div>
+
+        <div class="card">
+          <h2>20+</h2>
+          <p>DSA Topics</p>
+        </div>
+
+      </div>
+
+      <!-- Popular Topics -->
+      <div class="topics">
+        <h3>🔥 Popular Topics</h3>
+
+        <div class="chips">
+          <button class="topicBtn">Binary Search</button>
+          <button class="topicBtn">Trie</button>
+          <button class="topicBtn">DP</button>
+          <button class="topicBtn">Graph</button>
+          <button class="topicBtn">Sliding Window</button>
+          <button class="topicBtn">Greedy</button>
+        </div>
+      </div>
+
+      <!-- Chat -->
+      <div class="chat-section">
+
+        <h2>Ask a DSA Question</h2>
+
+        <div id="chatBox" class="chat-box"></div>
+
+        <div class="input-area">
+          <textarea
+            id="prompt"
+            placeholder="Ask any DSA question..."
+          ></textarea>
+
+          <button id="sendBtn">
+            Ask
+          </button>
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="dsa.js"></script>
+
+</body>
+</html>
